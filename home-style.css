@@ -114,6 +114,38 @@ body::before {
     clip-path: circle(75%);
 }
 
+@media (max-width: 768px) {
+
+    .wrapper {
+        display: flex;
+    }
+
+    .wrapper ul {
+        top: 45% !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper ul li {
+        padding-top: 68px;
+    }
+
+    .wrapper ul li a {
+        font-size: 108px !important;
+        text-transform: uppercase;
+
+    }
+
+    #active:checked~.menu-btn {
+        display: block;
+        color: #ffffff !important;
+        font-size: 96px;
+        position: absolute;
+        top: 40%;
+        left: 180%;
+    }
+}
+
 .menu-btn {
     position: absolute;
     z-index: 2;
